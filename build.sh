@@ -22,7 +22,7 @@ cd $(dirname `readlink  -f $0`)
 if [ ! -e squashfs4.3.tar.gz ]
 then
     # wget https://downloads.sourceforge.net/project/squashfs/squashfs/squashfs4.3/squashfs4.3.tar.gz
-    wget https://downloads.sourceforge.net/project/squashfs/squashfs/squashfs4.3/squashfs4.3.tar.gz?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsquashfs%2Ffiles%2Fsquashfs%2Fsquashfs4.3%2Fsquashfs4.3.tar.gz%2Fdownload%3Fuse_mirror%3Dastuteinternet%26r%3Dhttps%253A%252F%252Fsourceforge.net%252Fprojects%252Fsquashfs%252Ffiles%252Fsquashfs%252Fsquashfs4.3%252Fsquashfs4.3.tar.gz%252Fdownload%253Fuse_mirror%253Diweb&ts=1551828623
+    wget -O squashfs4.3.tar.gz https://downloads.sourceforge.net/project/squashfs/squashfs/squashfs4.3/squashfs4.3.tar.gz?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsquashfs%2Ffiles%2Fsquashfs%2Fsquashfs4.3%2Fsquashfs4.3.tar.gz%2Fdownload%3Fuse_mirror%3Dastuteinternet%26r%3Dhttps%253A%252F%252Fsourceforge.net%252Fprojects%252Fsquashfs%252Ffiles%252Fsquashfs%252Fsquashfs4.3%252Fsquashfs4.3.tar.gz%252Fdownload%253Fuse_mirror%253Diweb&ts=1551828623
 fi
 
 # Remove any previous squashfs4.3 directory to ensure a clean patch/build
